@@ -1584,8 +1584,10 @@ passToSuper:
 			}
 			else	// more complicated -- compute negative intersections
 			{
-				removedIndices = [[[currentVisibleIndices aq_indexesOutsideIndexSet: newVisibleIndices] mutableCopy] autorelease];
-				insertedIndices = [[[newVisibleIndices aq_indexesOutsideIndexSet: currentVisibleIndices] mutableCopy] autorelease];
+			// TODO: These two lines are causing paint issues on iOS 5
+			// Needs to revisit why this is happening
+			//	removedIndices = [[[currentVisibleIndices aq_indexesOutsideIndexSet: newVisibleIndices] mutableCopy] autorelease];
+			//	insertedIndices = [[[newVisibleIndices aq_indexesOutsideIndexSet: currentVisibleIndices] mutableCopy] autorelease];
 			}
 
 			if ( [removedIndices count] != 0 )
