@@ -212,6 +212,8 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "AQGridView" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -293,6 +295,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = AQGridView;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -312,6 +315,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = AQGridView;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
